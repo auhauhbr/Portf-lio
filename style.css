@@ -268,7 +268,6 @@ footer {
     font-size: 1.1rem;
 }
 
-/*contato */
 #contato {
     background: linear-gradient(to bottom, var(--card-bg), var(--card-bg-hover));
     border-radius: 20px;
@@ -323,4 +322,135 @@ footer {
 
 .copy-btn:hover {
     background: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 60px 15px 40px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .status {
+        font-size: 1.4rem;
+        padding: 6px 18px;
+    }
+
+    section {
+        padding: 50px 15px;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h2::after {
+        width: 80px;
+    }
+
+    .skills-grid {
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .skill-card {
+        width: 220px;
+        padding: 1.5rem 1rem;
+    }
+
+    .skill-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .skill-name {
+        font-size: 1.2rem;
+    }
+
+    .progress-text {
+        font-size: 0.9rem;
+    }
+
+    .competences-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .card {
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+
+    ul {
+        font-size: 1rem;
+        padding-left: 1.5rem;
+    }
+
+    ul li::before {
+        left: -1.5rem;
+    }
+
+    #contato {
+        padding: 30px;
+        margin: 30px auto;
+    }
+
+    .contact-item {
+        font-size: 1.1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-item i {
+        font-size: 1.5rem;
+    }
+
+    .copy-btn {
+        padding: 6px 12px;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    footer {
+        padding: 40px 15px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .status {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .skill-card {
+        width: 200px;
+    }
+
+    .competences-grid {
+        grid-template-columns: 1fr;
+    }
 }
